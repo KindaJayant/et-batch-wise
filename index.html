@@ -669,6 +669,124 @@
       </a>
     </div>
   </div>
+
+  <!-- KPI Grid (Clickable Cards) -->
+  <div class="kpi-grid">
+    <div class="kpi-card" onclick="quickFilterUsers('active')">
+      <div class="kpi-label">Active Users (&ge; 1 Event) <span class="kpi-hint">Explore &rarr;</span></div>
+      <div class="kpi-compare">
+        <div class="kpi-val-box">
+          <div class="kpi-val-sub"><span class="badge b1" style="padding:1px 4px;font-size:9px">B1</span> 2,772</div>
+          <div class="kpi-val b1">92.9%</div>
+        </div>
+        <div class="kpi-val-box text-right">
+          <div class="kpi-val-sub" style="justify-content: flex-end;"><span class="badge b2" style="padding:1px 4px;font-size:9px">B2</span> 2,078</div>
+          <div class="kpi-val b2">86.8%</div>
+        </div>
+      </div>
+      <div class="kpi-bar-track">
+        <div class="kpi-bar-fill-b1" style="width: 52%;"></div>
+        <div class="kpi-bar-fill-b2" style="width: 48%;"></div>
+      </div>
+      <div class="kpi-delta">B1 leads lifetime penetration by +6.1%</div>
+    </div>
+
+    <div class="kpi-card" onclick="switchTab('events', document.querySelectorAll('.tab-btn')[1])">
+      <div class="kpi-label">Total Event Triggers <span class="kpi-hint">View Events &rarr;</span></div>
+      <div class="kpi-compare">
+        <div class="kpi-val-box">
+          <div class="kpi-val-sub"><span class="badge b1" style="padding:1px 4px;font-size:9px">B1</span></div>
+          <div class="kpi-val b1">11.86M</div>
+        </div>
+        <div class="kpi-val-box text-right">
+          <div class="kpi-val-sub" style="justify-content: flex-end;"><span class="badge b2" style="padding:1px 4px;font-size:9px">B2</span></div>
+          <div class="kpi-val b2">925.9K</div>
+        </div>
+      </div>
+      <div class="kpi-bar-track">
+        <div class="kpi-bar-fill-b1" style="width: 92%;"></div>
+        <div class="kpi-bar-fill-b2" style="width: 8%;"></div>
+      </div>
+      <div class="kpi-delta">B1: 4,277 ev/act vs B2: 446 ev/act</div>
+    </div>
+
+    <div class="kpi-card" onclick="quickFilterUsers('recent7')">
+      <div class="kpi-label">7-Day Recency (Oct 7 - 14) <span class="kpi-hint">Explore &rarr;</span></div>
+      <div class="kpi-compare">
+        <div class="kpi-val-box">
+          <div class="kpi-val-sub"><span class="badge b1" style="padding:1px 4px;font-size:9px">B1</span> 1,344</div>
+          <div class="kpi-val b1">45.0%</div>
+        </div>
+        <div class="kpi-val-box text-right">
+          <div class="kpi-val-sub" style="justify-content: flex-end;"><span class="badge b2" style="padding:1px 4px;font-size:9px">B2</span> 1,550</div>
+          <div class="kpi-val b2">64.7%</div>
+        </div>
+      </div>
+      <div class="kpi-bar-track">
+        <div class="kpi-bar-fill-b1" style="width: 41%;"></div>
+        <div class="kpi-bar-fill-b2" style="width: 59%;"></div>
+      </div>
+      <div class="kpi-delta" style="font-weight:700; color:#18181b;">B2 leads recency by +19.7%</div>
+    </div>
+
+    <div class="kpi-card" onclick="quickFilterTier('super')">
+      <div class="kpi-label">Avg Active Days / User <span class="kpi-hint">Tiers &rarr;</span></div>
+      <div class="kpi-compare">
+        <div class="kpi-val-box">
+          <div class="kpi-val-sub"><span class="badge b1" style="padding:1px 4px;font-size:9px">B1</span></div>
+          <div class="kpi-val b1">25.2 <span style="font-size:12px; font-weight:400;">days</span></div>
+        </div>
+        <div class="kpi-val-box text-right">
+          <div class="kpi-val-sub" style="justify-content: flex-end;"><span class="badge b2" style="padding:1px 4px;font-size:9px">B2</span></div>
+          <div class="kpi-val b2">12.0 <span style="font-size:12px; font-weight:400;">days</span></div>
+        </div>
+      </div>
+      <div class="kpi-bar-track">
+        <div class="kpi-bar-fill-b1" style="width: 68%;"></div>
+        <div class="kpi-bar-fill-b2" style="width: 32%;"></div>
+      </div>
+      <div class="kpi-delta">Median: B1 = 1,188 vs B2 = 264</div>
+    </div>
+
+    <div class="kpi-card" onclick="quickFilterUsers('paid')">
+      <div class="kpi-label">Paid Subscribed Rate <span class="kpi-hint">Explore &rarr;</span></div>
+      <div class="kpi-compare">
+        <div class="kpi-val-box">
+          <div class="kpi-val-sub"><span class="badge b1" style="padding:1px 4px;font-size:9px">B1</span> 2,794</div>
+          <div class="kpi-val b1">93.6%</div>
+        </div>
+        <div class="kpi-val-box text-right">
+          <div class="kpi-val-sub" style="justify-content: flex-end;"><span class="badge b2" style="padding:1px 4px;font-size:9px">B2</span> 2,154</div>
+          <div class="kpi-val b2">89.9%</div>
+        </div>
+      </div>
+      <div class="kpi-bar-track">
+        <div class="kpi-bar-fill-b1" style="width: 51%;"></div>
+        <div class="kpi-bar-fill-b2" style="width: 49%;"></div>
+      </div>
+      <div class="kpi-delta">Active SuperInvesting plans</div>
+    </div>
+
+    <div class="kpi-card" onclick="quickFilterUsers('sync')">
+      <div class="kpi-label">Broker Portfolio Synced <span class="kpi-hint">Explore &rarr;</span></div>
+      <div class="kpi-compare">
+        <div class="kpi-val-box">
+          <div class="kpi-val-sub"><span class="badge b1" style="padding:1px 4px;font-size:9px">B1</span> 1,516</div>
+          <div class="kpi-val b1">50.8%</div>
+        </div>
+        <div class="kpi-val-box text-right">
+          <div class="kpi-val-sub" style="justify-content: flex-end;"><span class="badge b2" style="padding:1px 4px;font-size:9px">B2</span> 1,195</div>
+          <div class="kpi-val b2">49.9%</div>
+        </div>
+      </div>
+      <div class="kpi-bar-track">
+        <div class="kpi-bar-fill-b1" style="width: 50.4%;"></div>
+        <div class="kpi-bar-fill-b2" style="width: 49.6%;"></div>
+      </div>
+      <div class="kpi-delta">Near-identical sync adoption (~50%)</div>
+    </div>
+  </div>
+
   <!-- Tabs Navigation -->
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('features', this)">Feature Adoption & Charts</button>
